@@ -1,0 +1,112 @@
+
+* {margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+ul{list-style: none;}
+a{text-decoration: none; color: initial;}
+/*헤더*/
+header{width: 100%; height: 70px;
+      position: fixed; left: 0; top:0;
+ 
+}
+.hWarp{width: 1440px; height: 100%;
+      display: flex;
+      justify-content: space-between;
+   
+      margin: 0 auto;
+}
+.logo{width: 92px; height: 52px;
+      padding-top: 9px;
+}
+.logo img{width: 100%; height: 100%;}
+.gnb{display: flex; line-height: 70px;}
+.gnb li{margin-right: 30px;}
+
+.warp{width: 100%; height: 100%; display: flex;}
+/*왼쪽*/
+.warp .left{width: 40%; height: max(100vh, 100px);
+  background-color: #4882d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.warp .left .title{ font-size: 6.25rem; text-align: center;
+  font-weight: 900; color: #fff;
+}
+/*버튼*/
+.view_btn{ width: 250px;
+   height: 64px;
+  line-height: 64px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin: 30px auto;
+    display:none
+}
+/*두개의 버튼에 공통으로 display:none
+블루버튼 보여야함*/
+.btn1{display: block;}
+.view_btn:hover{box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.5);}
+
+
+
+
+
+
+
+.view_btn a{ color: #fff; font-size: 1rem; font-weight: bold;}
+/*오른쪽*/
+.warp .right{width: 60%;height: max(100vh,500px);
+  
+
+ }
+.right .content_wrap{ width: 900px; height: 550px;
+        margin: 10% auto 5%;
+}
+.right .content_wrap img{width: 100%; height: 100%; display: none;}
+.right .content_wrap .img1{display: block;}
+
+
+
+.shoesColor{display: flex; justify-content: center;}
+.shoesColor li{width: 250px; height: 150px;margin-right: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+.shoesColor li img{width: 100%; height: 100%;}
+.shoesColor li.on{box-shadow: 5px 5px 6px rgba(0,0,0,0.5);}
+
+@media all and (max-width:1200px){
+  .warp{
+    flex-direction: column;
+  }
+  .warp .left{width: 100%;
+    height: 70vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* position: absolute;
+    top:70px;left: 0; */
+  }
+  .view_btn a{  
+    font-size: 1rem; 
+   }
+  .warp .left .title{ font-size: 4rem; text-align: center;
+    font-weight: 900; color: #fff;
+  }
+
+  .view_btn{width: 200px; height: 60px;}
+
+.warp .right{width: 100%;height:min(100vh, 100px);
+   
+}
+.right .content_wrap{ width: 100%; height: auto;
+  margin: 0% auto 5%;
+}
+
+
+
+
+}

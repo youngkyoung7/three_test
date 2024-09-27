@@ -1,0 +1,22 @@
+화면에 F5을 눌러 새로고침하였을때
+하얀색 화면이 나오는데 사용자 입장에서는 당황스로울수 있는 화면
+
+-캐릭터에 용량이 커서 불러들리는데 시간이 거림
+그래서 
+
+1. html 파일을 열기
+progress(프로매스) 태그 사용
+- 작업의 완료정도를 나타내며 주로 징행 표시줄 형태로 나타냄
+- 속성
+   max:요소가 나타내는 최대 수치 
+        0보다 크고 유효한 부동소수점, 기본값1
+   value:요소가 나타내는 작업을 완료한 정도
+      유효한 부동소수점 숫자여야 하고max를 지정한경우
+0이상max보다 작아야함
+2. css 수정
+3.js파일 열기
+
+LoadingManger사용-three.js에서 제공하는 로딩을 관리 
+카메라 밑에 적기
+  const loadingManager = new THREE.LoadingManager();
+  const gltfLoader = new GLTFLoader(loadingManager);
